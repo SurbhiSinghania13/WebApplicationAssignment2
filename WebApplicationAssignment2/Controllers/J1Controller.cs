@@ -37,73 +37,26 @@ namespace WebApplicationAssignment2.Controllers
             int totalCalories = 0;
             string message = "";
 
-            if (burger==1)
-            {
-                burgercalories = 461;
-            }
-            else if (burger == 2)
-            {
-                burgercalories = 431;
-            }
-            else if (burger == 3)
-            {
-                burgercalories = 420;
-            }
-            else
-            {
-                burgercalories = 0;
-            }
+            if (burger==1) { burgercalories = 461; }
+            else if (burger == 2) { burgercalories = 431; }
+            else if (burger == 3) { burgercalories = 420; }
+            else { burgercalories = 0; }
 
-            if (drink == 1)
-            {
-                drinkcalories = 130;
-            }
-            else if (drink == 2)
-            {
-                drinkcalories = 160;
-            }
-            else if(drink == 3)
-            {
-                drinkcalories = 118;
-            }
-            else
-            {
-                drinkcalories = 0;
-            }
+            if (drink == 1) { drinkcalories = 130; }
+            else if (drink == 2) { drinkcalories = 160; }
+            else if(drink == 3) { drinkcalories = 118; }
+            else { drinkcalories = 0; }
 
-            if (side == 1)
-            {
-                sidecalories = 100;
-            }
-            else if (side == 2)
-            {
-                sidecalories = 57;
-            }
-            else if (side == 3)
-            {
-                sidecalories = 70;
-            }
-            else
-            {
-                sidecalories = 0;
-            }
+            if (side == 1) { sidecalories = 100; }
+            else if (side == 2) { sidecalories = 57; }
+            else if (side == 3) { sidecalories = 70; }
+            else { sidecalories = 0; }
 
-            if (dessert == 1)
-            {
-                dessertcalories = 167;
-            }
-            else if (dessert == 2)
-            {
-                dessertcalories = 266;
-            }
-            else if (dessert == 3)
-            {
-                dessertcalories = 75;
-            }
-            else
-            {
-                dessertcalories = 0;
-            }
+            if (dessert == 1) { dessertcalories = 167; }
+            else if (dessert == 2) { dessertcalories = 266; }
+            else if (dessert == 3) { dessertcalories = 75; }
+            else { dessertcalories = 0; }
+
             totalCalories = burgercalories + drinkcalories + sidecalories + dessertcalories;
             message = "Your total calorie count is " + totalCalories;
             return message;
